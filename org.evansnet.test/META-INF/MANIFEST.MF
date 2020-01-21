@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: org.evansnst.test
+Bundle-SymbolicName: org.evansnet.test
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.evansnet.test.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.evansnet.dataconnector;bundle-version="1.0.0",
+ org.evansnet.ingredient;bundle-version="1.0.0",
+ org.evansnet.model.common;bundle-version="1.0.0",
+ org.evansnet.model.measure;bundle-version="1.0.0",
+ org.evansnet.model.process;bundle-version="1.0.0",
+ org.evansnet.repository;bundle-version="1.0.0"
+Automatic-Module-Name: org.evansnet.test
+Bundle-ActivationPolicy: lazy
+Import-Package: org.evansnet.common.configuration
