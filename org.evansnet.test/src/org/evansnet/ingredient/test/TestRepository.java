@@ -89,7 +89,7 @@ public class TestRepository {
 	}
 
 //	private Certificate fetchCert() throws Exception {
-//		String certFile = "C:\\Users\\pmidce0\\git\\dataconnector\\org.evansnet.dataconnector\\Security\\credentials.cer";
+//		String certFile = "C:\\Users\\pmidce0\\git\\dataconnector\\org.evansnet.dataconnector\\Security\\credentialsMock.cer";
 //		FileInputStream fis = new FileInputStream(certFile);
 //		Certificate cert = CertificateFactory.getInstance("X.509").generateCertificate(fis);
 //		return cert;

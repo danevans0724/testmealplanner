@@ -30,9 +30,10 @@ public class TestSetEvansnetProperties {
 	public void setUp() throws Exception {
 		Properties sysProp = System.getProperties();
 		fileName = "TestFile.txt";
-		userPath = sysProp.getProperty("user.home");
+//		userPath = sysProp.getProperty("user.home");
+		userPath = Paths.get("").toAbsolutePath().toString(); 	//Use the current test path.
 		defaultFile = "configuration.properties";
-		defaultPath = userPath + File.separator + "evansnet\\cfg";
+		defaultPath = userPath + File.separator + "TestObjects";
 		theDefault = defaultPath + File.separator + defaultFile;		
 		
 		// Create the test file in the user's directory.
@@ -55,6 +56,7 @@ public class TestSetEvansnetProperties {
 	public void tearDown() throws Exception {
 	}
 	
+	@SuppressWarnings("restriction")
 	@Test
 	public void testGlobal() {
 		//The config path and file do not exist for the start of this test.

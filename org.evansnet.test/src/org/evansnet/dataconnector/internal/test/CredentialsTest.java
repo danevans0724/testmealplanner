@@ -41,7 +41,7 @@ public class CredentialsTest {
 	@Before
 	public void setUp() throws Exception {
 		try {
-			testCertFile = "C:\\Users\\pmidce0\\git\\dataconnector\\org.evansnet.dataconnector\\TestObjects\\credentials.cer";
+			testCertFile = "C:\\Users\\pmidce0\\git\\testmealplanner\\org.evansnet.test\\TestObjects\\credentials.cer";
 			readCertFromFile();
 
 			// Get the decrypted version of the password for comparison.

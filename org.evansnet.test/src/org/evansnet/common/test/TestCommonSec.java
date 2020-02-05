@@ -41,8 +41,8 @@ public class TestCommonSec {
 	
 	//Mocks
 	@Mock private Global globalMock = createNiceMock(Global.class);
-	String currentDir = "C:\\Users\\pmidce0\\git\\common\\org.evansnet.common";
-	String workingDir = currentDir + File.separator + "evansnet";
+	String currentDir = "C:\\Users\\pmidce0\\git\\testmealplanner";
+	String workingDir = currentDir + File.separator + "org.evansnet.test";
 	String testDir = workingDir + File.separator + "TestObjects";
 			
 	@Before
@@ -211,8 +211,7 @@ public class TestCommonSec {
 			byte[] testEncoded = cert.getEncoded();
 			assertArrayEquals(testEncoded, fetchedEncoded);
 		} catch (NoSuchMethodException | SecurityException | IllegalAccessException | IllegalArgumentException | InvocationTargetException | CertificateEncodingException e) {
-			javaLogger.log(Level.SEVERE, "fetched certificate does not equal test! ");
-			printStackTrace(e.getStackTrace());
+			javaLogger.log(Level.SEVERE, "fetched certificate does not equal test! " + e.getCause());
 		}
 	}
 	

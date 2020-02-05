@@ -33,9 +33,9 @@ public class TestRepositoryHelper {
 	@Mock IDatabase mySqlMock = mock(IDatabase.class);
 	@Mock IHost hostMock = createMock(Host.class);
 
-	//jdbc:sqlserver://host\instanceName:portNumber;property=value;property=value
-	//jdbc:sqlserver://host:portNumber;database=theDatabase;property=value;property=value
-	//jdbc:jtds:sybase://host:port/database/
+	//jdbc:sqlserver://hostMock\instanceName:portNumber;property=value;property=value
+	//jdbc:sqlserver://hostMock:portNumber;database=theDatabase;property=value;property=value
+	//jdbc:jtds:sybase://hostMock:port/database/
 	//jdbc:mysql://Host:3306/database?user=name?password=pwd
 	
 	@Before
@@ -121,7 +121,7 @@ public class TestRepositoryHelper {
 				assertTrue(databaseMock.getHost().getPort() == 1433);
 				assertTrue(databaseMock.getSchema().equals("dbo"));
 			} catch (ClassNotFoundException | SQLException e) {
-				fail("Did not get correct databaseMock name, host name or port! Returned " 
+				fail("Did not get correct databaseMock name, hostMock name or port! Returned " 
 				+ databaseMock.getHost().getHostName() + ", " 
 				+ databaseMock.getDatabaseName() + ", " 
 				+ databaseMock.getHost().getPort());
@@ -138,7 +138,7 @@ public class TestRepositoryHelper {
 					assertTrue(mySqlMock.getDatabaseName().equals("MySqlDatabase"));
 					assertTrue(mySqlMock.getHost().getPort() == 3306);
 				} catch (ClassNotFoundException | SQLException e) {
-					fail("Did not get correct databaseMock name, host name or port! Returned " 
+					fail("Did not get correct databaseMock name, hostMock name or port! Returned " 
 							+ databaseMock.getHost().getHostName() + ", " 
 							+ databaseMock.getDatabaseName() + ", " 
 							+ databaseMock.getHost().getPort());

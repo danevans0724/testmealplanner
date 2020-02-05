@@ -14,4 +14,5 @@ Require-Bundle: org.eclipse.ui,
  org.evansnet.repository;bundle-version="1.0.0"
 Automatic-Module-Name: org.evansnet.test
 Bundle-ActivationPolicy: lazy
-Import-Package: org.evansnet.common.configuration
+Import-Package: org.evansnet.common.configuration,
+ org.junit.runner;version="4.12.0"
