@@ -45,7 +45,6 @@ public class TestRepository {
 	@Mock private ResultSet rsMock = createNiceMock(ResultSet.class);
 	@Mock private Ingredient i;
 	
-	@SuppressWarnings("restriction")
 	@Before
 	public void setUp() throws Exception {
 		
@@ -90,13 +89,6 @@ public class TestRepository {
 
 	}
 
-//	private Certificate fetchCert() throws Exception {
-//		String certFile = "C:\\Users\\pmidce0\\git\\dataconnector\\org.evansnet.dataconnector\\Security\\credentialsMock.cer";
-//		FileInputStream fis = new FileInputStream(certFile);
-//		Certificate cert = CertificateFactory.getInstance("X.509").generateCertificate(fis);
-//		return cert;
-//	}
-
 	@After
 	public void tearDown() throws Exception {
 		dbMock = null;
@@ -115,7 +107,6 @@ public class TestRepository {
 		}
 	}
 	
-	@SuppressWarnings("restriction")
 	@Test
 	public void testDoUpdate() {
 		i.setIngredientName("All Purpose Flour");
@@ -127,7 +118,6 @@ public class TestRepository {
 		}
 	}
 	
-	@SuppressWarnings("restriction")
 	@Test
 	public void testDoFetchAll() {
 		//Test executing a select statement from the IngredientRepository class.
