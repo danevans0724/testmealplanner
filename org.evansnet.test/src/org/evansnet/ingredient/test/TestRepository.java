@@ -27,6 +27,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+@SuppressWarnings("restriction")
 public class TestRepository {
 	
 	private static Logger testLogger = Logger.getLogger("TestRepositoryLogger");
@@ -44,6 +45,7 @@ public class TestRepository {
 	@Mock private ResultSet rsMock = createNiceMock(ResultSet.class);
 	@Mock private Ingredient i;
 	
+	@SuppressWarnings("restriction")
 	@Before
 	public void setUp() throws Exception {
 		
@@ -113,6 +115,7 @@ public class TestRepository {
 		}
 	}
 	
+	@SuppressWarnings("restriction")
 	@Test
 	public void testDoUpdate() {
 		i.setIngredientName("All Purpose Flour");
@@ -124,6 +127,7 @@ public class TestRepository {
 		}
 	}
 	
+	@SuppressWarnings("restriction")
 	@Test
 	public void testDoFetchAll() {
 		//Test executing a select statement from the IngredientRepository class.

@@ -15,6 +15,7 @@ import org.eclipse.swt.SWT;
  * @author pmidce0
  */
 
+@SuppressWarnings("restriction")
 public class TestIngredientComposite {
 	
 	IngredientCompositeBase ingTest;
@@ -24,6 +25,7 @@ public class TestIngredientComposite {
 	 * Launch the application.
 	 * @param args
 	 */
+	@SuppressWarnings("restriction")
 	public static void main(String[] args) {
 		TestIngredientComposite t = new TestIngredientComposite();
 		Display display = Display.getDefault();

@@ -17,15 +17,13 @@ import java.security.cert.CertificateEncodingException;
 import java.security.cert.CertificateFactory;
 
 import org.easymock.Mock;
-//import org.easymock.EasyMock;
-//import org.easymock.IAnswer;
-//import org.easymock.Mock;
 import org.evansnet.common.configuration.Global;
 import org.evansnet.common.security.CommonSec;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+@SuppressWarnings("restriction")
 public class TestCommonSec {
 	
 	private Logger javaLogger = Logger.getLogger(TestCommonSec.class.getName());
