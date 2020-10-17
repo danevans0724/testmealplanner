@@ -8,10 +8,7 @@ Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.evansnet.dataconnector;bundle-version="1.0.0",
  org.evansnet.ingredient;bundle-version="1.0.0",
- org.evansnet.common;bundle-version="1.0.0",
- org.evansnet.measure;bundle-version="1.0.0",
- org.evansnet.process;bundle-version="1.0.0",
- org.evansnet.repository;bundle-version="1.0.0"
+ org.evansnet.common;bundle-version="1.0.0"
 Automatic-Module-Name: org.evansnet.test
 Bundle-ActivationPolicy: lazy
 Import-Package: org.evansnet.common.configuration,

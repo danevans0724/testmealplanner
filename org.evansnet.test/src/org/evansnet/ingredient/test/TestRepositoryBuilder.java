@@ -10,10 +10,10 @@ import java.sql.SQLException;
 
 import org.evansnet.dataconnector.internal.core.DBType;
 import org.evansnet.dataconnector.internal.dbms.SQLSrvConnection;
-import org.evansnet.ingredient.repository.IngredientRepository;
-import org.evansnet.ingredient.repository.RepositoryBuilder;
-import org.evansnet.repository.core.IRepository;
-import org.evansnet.repository.core.RepositoryHelper;
+import org.evansnet.ingredient.persistence.repository.IngredientRepository;
+import org.evansnet.ingredient.persistence.repository.RepositoryBuilder;
+import org.evansnet.ingredient.persistence.repository.IRepository;
+import org.evansnet.ingredient.persistence.repository.RepositoryHelper;
 
 import static org.easymock.EasyMock.*;
 

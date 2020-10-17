@@ -16,7 +16,7 @@ import org.evansnet.dataconnector.internal.core.DBType;
 import org.evansnet.dataconnector.internal.core.Host;
 import org.evansnet.dataconnector.internal.core.IDatabase;
 import org.evansnet.dataconnector.internal.core.IHost;
-import org.evansnet.repository.core.RepositoryHelper;
+import org.evansnet.ingredient.persistence.repository.RepositoryHelper;
 import org.evansnet.dataconnector.internal.core.Credentials;
 
 

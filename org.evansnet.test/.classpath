@@ -20,12 +20,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/cglib-nodep-3.2.9.jar"/>
-	<classpathentry kind="lib" path="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/hamcrest-core-1.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/javassist-3.24.0-GA.jar" sourcepath="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/powermock-easymock-2.0.2-full.jar"/>
-	<classpathentry kind="lib" path="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/junit-4.12.jar"/>
-	<classpathentry kind="lib" path="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/objenesis-3.0.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/powermock-easymock-2.0.2-full.jar"/>
-	<classpathentry kind="lib" path="C:/Users/pmidce0/Documents/TargetPlatforms/powermock-easymock-junit-2.0.2/easymock-4.0.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/powermock"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/org.evansnet.ingredient"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
